@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "CoSN1FVTT",
+        "abbreviation": "CoS N1",
+        "full": "St. Andral's Church NPCs — Foundry/Plutonium",
+        "version": "1.0",
+        "authors": ["Campaign Import"],
+        "convertedBy": ["ChatGPT"]
+      }
+    ],
+    "edition": "classic",
+    "dateAdded": 1788927680,
+    "dateLastModified": 1788927680
+  },
+  "monster": [
+    {
+      "name": "Yeska",
+      "source": "CoSN1FVTT",
+      "page": 97,
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/yeska_portrait.webp",
+      "tokenHref": {"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/yeska_token.webp"},
+      "fluff": {"images":[{"type":"image","href":{"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/yeska_portrait.webp"}}]},
+      "size": ["S"],
+      "type": {"type":"humanoid","tags":["human"]},
+      "alignment": ["N","G"],
+      "ac": [10],
+      "hp": {"average":1,"formula":"1d4 - 1"},
+      "speed": {"walk":30},
+      "str":10,"dex":10,"con":8,"int":10,"wis":10,"cha":10,
+      "passive":10,
+      "languages":["Common"],
+      "cr":"0",
+      "trait":[{"name":"Noncombatant","entries":["Yeska is treated as a noncombatant. Area N1 does not assign him a dedicated combat stat block; the minimal values here exist only so Foundry can create an Actor."]}]
+    }
+  ]
+}
