@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "CoSN1FVTT",
+        "abbreviation": "CoS N1",
+        "full": "St. Andral's Church NPCs — Foundry/Plutonium",
+        "version": "1.0",
+        "authors": ["Campaign Import"],
+        "convertedBy": ["ChatGPT"]
+      }
+    ],
+    "edition": "classic",
+    "dateAdded": 1788927680,
+    "dateLastModified": 1788927680
+  },
+  "monster": [
+    {
+      "name": "Father Lucian Petrovich",
+      "source": "CoSN1FVTT",
+      "page": 97,
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/father_lucian_petrovich_portrait.webp",
+      "tokenHref": {"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/father_lucian_petrovich_token.webp"},
+      "fluff": {"images":[{"type":"image","href":{"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/father_lucian_petrovich_portrait.webp"}}]},
+      "size": ["M"],
+      "type": {"type":"humanoid","tags":["human"]},
+      "alignment": ["L","G"],
+      "ac": [{"ac":13,"from":["chain shirt"]}],
+      "hp": {"average":27,"formula":"5d8 + 5"},
+      "speed": {"walk":30},
+      "str":10,"dex":10,"con":12,"int":13,"wis":16,"cha":13,
+      "skill": {"medicine":"+7","persuasion":"+3","religion":"+5"},
+      "passive":13,
+      "languages":["Common","one other language"],
+      "cr":"2",
+      "spellcasting":[{
+        "name":"Spellcasting","type":"spellcasting","headerEntries":["Father Lucian is a 5th-level spellcaster. Wisdom is his spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks)."],
+        "spells":{"0":{"spells":["{@spell light}","{@spell sacred flame}","{@spell thaumaturgy}"]},"1":{"slots":4,"spells":["{@spell cure wounds}","{@spell guiding bolt}","{@spell sanctuary}"]},"2":{"slots":3,"spells":["{@spell lesser restoration}","{@spell spiritual weapon}"]},"3":{"slots":2,"spells":["{@spell dispel magic}","{@spell spirit guardians}"]}},
+        "ability":"wis"
+      }],
+      "trait":[{"name":"Divine Eminence","entries":["As a bonus action, Father Lucian can expend a spell slot. Until the end of the turn, his melee weapon attacks deal an extra 10 ({@damage 3d6}) radiant damage on a hit. The extra damage increases by {@damage 1d6} for each slot level above 1st."]}],
+      "action":[{"name":"Mace","entries":["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."]}],
+      "damageTags":["B","R"],
+      "spellcastingTags":["CC"],
+      "miscTags":["MW"]
+    }
+  ]
+}
