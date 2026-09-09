@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "CoSN1FVTT",
+        "abbreviation": "CoS N1",
+        "full": "St. Andral's Church NPCs — Foundry/Plutonium",
+        "version": "1.0",
+        "authors": ["Campaign Import"],
+        "convertedBy": ["ChatGPT"]
+      }
+    ],
+    "edition": "classic",
+    "dateAdded": 1788927680,
+    "dateLastModified": 1788927680
+  },
+  "monster": [
+    {
+      "name": "Milivoj",
+      "source": "CoSN1FVTT",
+      "page": 97,
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/milivoj_portrait.webp",
+      "tokenHref": {"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/milivoj_token.webp"},
+      "fluff": {"images":[{"type":"image","href":{"type":"external","url":"https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/milivoj_portrait.webp"}}]},
+      "size": ["M"],
+      "type": {"type":"humanoid","tags":["human"]},
+      "alignment": ["N"],
+      "ac": [10],
+      "hp": {"average":4,"formula":"1d8"},
+      "speed": {"walk":30},
+      "str":15,"dex":10,"con":10,"int":10,"wis":10,"cha":10,
+      "passive":10,
+      "languages":["Common"],
+      "cr":"0",
+      "action":[{"name":"Shovel","entries":["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."]}],
+      "damageTags":["B"],
+      "miscTags":["MW"]
+    }
+  ]
+}
