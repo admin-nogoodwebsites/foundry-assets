@@ -6,7 +6,7 @@
         "json": "VallakiGenericNPCs",
         "abbreviation": "Vallaki NPCs",
         "full": "Generic Vallaki NPCs for Foundry VTT",
-        "version": "3.0",
+        "version": "3.1",
         "authors": ["Campaign Import"],
         "convertedBy": ["ChatGPT"]
       }
@@ -17,10 +17,10 @@
     {
       "name": "Vallaki Commoner - Female",
       "source": "VallakiGenericNPCs",
-      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_portrait.webp",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_portrait_v2.webp",
       "tokenHref": {
         "type": "external",
-        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_token.webp"
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_token_v2.webp"
       },
       "fluff": {
         "images": [
@@ -28,7 +28,7 @@
             "type": "image",
             "href": {
               "type": "external",
-              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_portrait.webp"
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_commoner_female_portrait_v2.webp"
             }
           }
         ]
