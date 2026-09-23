@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "VallakiChildGirlV3",
+        "abbreviation": "Vallaki Child Girl",
+        "full": "Vallaki Child - Girl for Foundry VTT",
+        "version": "3.0",
+        "authors": ["Campaign Import"],
+        "convertedBy": ["ChatGPT"]
+      }
+    ],
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Vallaki Child - Girl",
+      "source": "VallakiChildGirlV3",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_child_girl_portrait_v3.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_child_girl_token_v3.webp"
+      },
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_child_girl_portrait_v3.webp"
+            }
+          }
+        ]
+      },
+      "size": ["S"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["N"],
+      "ac": [10],
+      "hp": {"average": 4, "formula": "1d8"},
+      "speed": {"walk": 30},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "languages": ["Common"],
+      "cr": "0",
+      "action": [
+        {
+          "name": "Club",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": ["B"],
+      "miscTags": ["MW"]
+    }
+  ]
+}
