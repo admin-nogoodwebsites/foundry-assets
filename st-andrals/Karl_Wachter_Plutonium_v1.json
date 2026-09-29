@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "KarlWachterV1",
+        "abbreviation": "Karl Wachter",
+        "full": "Karl Wachter for Foundry VTT",
+        "version": "1.0",
+        "authors": [
+          "Campaign Import"
+        ],
+        "convertedBy": [
+          "ChatGPT"
+        ]
+      }
+    ],
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Karl Wachter",
+      "source": "KarlWachterV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/karl_wachter_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/karl_wachter_token_v1.png"
+      },
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/karl_wachter_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "breastplate"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 9,
+        "formula": "2d8"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 12,
+      "con": 11,
+      "int": 12,
+      "wis": 14,
+      "cha": 16,
+      "skill": {
+        "deception": "+5",
+        "insight": "+4",
+        "persuasion": "+5"
+      },
+      "passive": 12,
+      "languages": [
+        "Common",
+        "any two languages"
+      ],
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Rapier",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Parry",
+          "entries": [
+            "Karl adds 2 to his AC against one melee attack that would hit him. To do so, Karl must see the attacker and be wielding a melee weapon."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    }
+  ]
+}
