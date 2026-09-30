@@ -1,0 +1,134 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "GenericWereravenHumanV1",
+        "abbreviation": "Generic Wereraven",
+        "full": "Generic Wereraven (Human Form) for Foundry VTT",
+        "version": "1.0",
+        "authors": [
+          "Campaign Import"
+        ],
+        "convertedBy": [
+          "ChatGPT"
+        ]
+      }
+    ],
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Generic Wereraven - Human Form",
+      "source": "GenericWereravenHumanV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/generic_wereraven_human_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/generic_wereraven_human_token_v1.png"
+      },
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/generic_wereraven_human_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human",
+          "shapechanger"
+        ]
+      },
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "average": 31,
+        "formula": "7d8"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 15,
+      "con": 11,
+      "int": 13,
+      "wis": 15,
+      "cha": 14,
+      "skill": {
+        "insight": "+4",
+        "perception": "+6"
+      },
+      "passive": 16,
+      "languages": [
+        "Common"
+      ],
+      "cr": "2",
+      "trait": [
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The wereraven can use its action to change between its human form, a raven-humanoid hybrid, and a raven. Its statistics remain the same except for size and form-specific movement. Worn or carried equipment does not transform, and it returns to human form when it dies."
+          ]
+        },
+        {
+          "name": "Mimicry",
+          "entries": [
+            "The wereraven can imitate simple sounds it has heard. A creature can recognize the imitation with a successful DC 10 Wisdom (Insight) check."
+          ]
+        },
+        {
+          "name": "Regeneration",
+          "entries": [
+            "The wereraven regains 10 hit points at the start of its turn. This regeneration does not function on the turn after it takes damage from a silvered weapon or a spell. It dies only if it starts its turn at 0 hit points and cannot regenerate."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack (Human or Hybrid Form Only)",
+          "entries": [
+            "The wereraven makes two weapon attacks. One of these attacks can be made with its hand crossbow."
+          ]
+        },
+        {
+          "name": "Beak (Raven or Hybrid Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or 4 ({@damage 1d4 + 2}) piercing damage in hybrid form. A humanoid hit by this attack must succeed on a DC 10 Constitution saving throw or contract wereraven lycanthropy."
+          ]
+        },
+        {
+          "name": "Shortsword (Human or Hybrid Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Hand Crossbow (Human or Hybrid Form Only)",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ]
+    }
+  ]
+}
