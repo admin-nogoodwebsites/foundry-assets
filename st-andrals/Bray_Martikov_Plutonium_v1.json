@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "BrayMartikovV1",
+        "abbreviation": "Bray Martikov",
+        "full": "Bray Martikov for Foundry VTT",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "dateAdded": 1790731487,
+    "dateLastModified": 1790731487,
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Bray Martikov",
+      "source": "BrayMartikovV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/bray_martikov_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/bray_martikov_token_v1.png"
+      },
+      "fluff": {
+        "entries": [
+          "Bray Martikov is the nine-year-old son of Urwin Martikov and Danika Dorakova and an inexperienced young wereraven. This is his human-form, noncombatant profile."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/bray_martikov_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": ["S"],
+      "type": {"type": "humanoid", "tags": ["human", "shapechanger"]},
+      "ac": [10],
+      "hp": {"average": 7, "formula": "2d6"},
+      "speed": {"walk": 30},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 10,
+      "wis": 10,
+      "cha": 10,
+      "passive": 10,
+      "languages": ["Common"],
+      "cr": "0"
+    }
+  ]
+}
