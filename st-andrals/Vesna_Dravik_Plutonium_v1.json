@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "VesnaDravikV1",
+        "abbreviation": "Vesna Dravik",
+        "full": "Vesna Dravik, Vallaki Alchemist, for Foundry VTT",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "dateAdded": 1792560127,
+    "dateLastModified": 1792560127,
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Vesna Dravik",
+      "source": "VesnaDravikV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vesna_dravik_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vesna_dravik_token_v1.png"
+      },
+      "fluff": {
+        "entries": [
+          "An original homebrew NPC for Vallaki, not a canonical character from Curse of Strahd. Vesna Dravik is a practical human alchemist in her mid-forties who runs The Copper Retort, a cramped shop filled with dried herbs, copper apparatus, and carefully stoppered bottles. She prepares mundane remedies, dyes, solvents, and reagents rather than practicing combat magic.",
+          {
+            "type": "entries",
+            "name": "Personality",
+            "entries": [
+              "Precise, dry-witted, and quietly compassionate, Vesna mistrusts grand promises and keeps basic remedies affordable. She prefers customers who describe their symptoms honestly and dreads the town's intrusive festival inspections."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Adventure Hook",
+            "entries": [
+              "A courier carrying her next shipment of medicinal herbs has vanished outside Vallaki. Vesna asks the characters to find the courier and recover the supplies, offering coin and a favor in return."
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vesna_dravik_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["N", "G"],
+      "ac": [10],
+      "hp": {"average": 4, "formula": "1d8"},
+      "speed": {"walk": 30},
+      "str": 10,
+      "dex": 10,
+      "con": 10,
+      "int": 14,
+      "wis": 12,
+      "cha": 10,
+      "skill": {"arcana": "+4", "medicine": "+3", "nature": "+4"},
+      "passive": 11,
+      "languages": ["Common"],
+      "cr": "0",
+      "trait": [
+        {
+          "name": "Alchemist's Supplies",
+          "entries": [
+            "Vesna is proficient with alchemist's supplies. She has a +4 bonus to Intelligence checks made using these tools when the DM calls for such a check. This trait records the proficiency for manual use and does not automate crafting, healing, or potion effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Club",
+          "entries": [
+            "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+          ]
+        }
+      ],
+      "damageTags": ["B"],
+      "miscTags": ["MW"]
+    }
+  ]
+}
