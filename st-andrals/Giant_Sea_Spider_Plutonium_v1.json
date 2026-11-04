@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "GiantSeaSpiderV1",
+        "abbreviation": "Giant Sea Spider",
+        "full": "Giant Sea Spider for Foundry VTT",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "dateAdded": 1793770122,
+    "dateLastModified": 1793770122,
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Giant Sea Spider",
+      "source": "GiantSeaSpiderV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/giant_sea_spider_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/giant_sea_spider_token_v1.png"
+      },
+      "fluff": {
+        "entries": [
+          "An original homebrew aquatic predator inspired by the classic Giant Spider, substantially strengthened for a more dangerous encounter. Its silk functions underwater as a homebrew adaptation. CR 5 is a starting estimate, not a claim of independent encounter-balance testing; underwater terrain, party level, and access to aquatic movement can significantly affect the encounter.",
+          "Pale chitin and eight barnacle-encrusted legs emerge from the silt. This predator anchors nearly invisible strands between submerged rocks and wreckage, sensing the movements of prey through the waterlogged silk."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/giant_sea_spider_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": ["L"],
+      "type": "beast",
+      "alignment": ["U"],
+      "ac": [{"ac": 16, "from": ["natural armor"]}],
+      "hp": {"average": 95, "formula": "10d10 + 40"},
+      "speed": {"walk": 30, "climb": 30, "swim": 40},
+      "str": 18,
+      "dex": 16,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 6,
+      "skill": {"perception": "+4", "stealth": "+6"},
+      "senses": ["blindsight 10 ft.", "darkvision 60 ft."],
+      "passive": 14,
+      "cr": "5",
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Web Sense",
+          "entries": [
+            "While in contact with a web, the spider knows the exact location of any other creature in contact with that web."
+          ]
+        },
+        {
+          "name": "Web Walker",
+          "entries": [
+            "The spider ignores movement restrictions caused by webbing."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The spider can breathe only underwater."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The spider makes two Bite attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one. If this poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while poisoned in this way."
+          ]
+        },
+        {
+          "name": "Web {@recharge 5}",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the restrained target can make a {@dc 15} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 12; hp 15; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage). This aquatic spider's silk remains functional underwater."
+          ]
+        }
+      ],
+      "damageTags": ["P", "I"],
+      "miscTags": ["MW", "RW"],
+      "senseTags": ["B", "D"]
+    }
+  ]
+}
