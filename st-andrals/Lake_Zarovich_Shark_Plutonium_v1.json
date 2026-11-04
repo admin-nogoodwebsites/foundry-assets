@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "LakeZarovichSharkV1",
+        "abbreviation": "Lake Zarovich Shark",
+        "full": "Lake Zarovich Shark for Foundry VTT",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "dateAdded": 1793767677,
+    "dateLastModified": 1793767677,
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Lake Zarovich Shark",
+      "source": "LakeZarovichSharkV1",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/lake_zarovich_shark_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/lake_zarovich_shark_token_v1.png"
+      },
+      "fluff": {
+        "entries": [
+          "An original homebrew encounter creature for Lake Zarovich, not a claim that sharks are canonical inhabitants of the lake. This freshwater-adapted predator uses classic Hunter Shark statistics without additional powers.",
+          "A scarred, slate-backed shark moves beneath the lake's cold, silty water. Its pale underside flashes briefly in the dim light before it vanishes among submerged branches."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/lake_zarovich_shark_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "size": ["L"],
+      "type": "beast",
+      "alignment": ["U"],
+      "ac": [{"ac": 12, "from": ["natural armor"]}],
+      "hp": {"average": 45, "formula": "6d10 + 12"},
+      "speed": {"walk": 0, "swim": 40},
+      "str": 18,
+      "dex": 13,
+      "con": 15,
+      "int": 1,
+      "wis": 10,
+      "cha": 4,
+      "skill": {"perception": "+2"},
+      "senses": ["blindsight 30 ft."],
+      "passive": 12,
+      "cr": "2",
+      "trait": [
+        {
+          "name": "Blood Frenzy",
+          "entries": [
+            "The shark has advantage on melee attack rolls against a creature that is missing any of its hit points."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The shark can breathe only underwater."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": ["P"],
+      "miscTags": ["MW"],
+      "senseTags": ["B"]
+    }
+  ]
+}
