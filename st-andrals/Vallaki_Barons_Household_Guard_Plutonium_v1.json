@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "VallakiBaronHouseholdGuardV1",
+        "abbreviation": "Baron's Guard",
+        "full": "Vallaki — Baron's Household Guard (Homebrew)",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Baron's Household Guard",
+      "source": "VallakiBaronHouseholdGuardV1",
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["L", "N"],
+      "ac": [{"ac": 18, "from": ["{@item chain mail|PHB}", "{@item shield|PHB}"]}],
+      "hp": {"average": 58, "formula": "9d8 + 18"},
+      "speed": {"walk": 30},
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 10,
+      "wis": 12,
+      "cha": 11,
+      "skill": {"athletics": "+5", "perception": "+3", "intimidation": "+2"},
+      "passive": 13,
+      "languages": ["Common"],
+      "cr": "3",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_baron_household_guard_portrait_v1.webp",
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_baron_household_guard_token_v1.png"
+      },
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The guard makes two Longsword attacks and one Shield Bash attack."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Shield Bash",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Heavy Crossbow",
+          "entries": [
+            "{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage. The guard must doff its shield before using this two-handed weapon; without its shield, its AC is 16. Donning or doffing the shield takes an action. This attack is not part of Multiattack."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Parry",
+          "entries": [
+            "The guard adds 2 to its AC against one melee attack that would hit it. To do so, the guard must see the attacker and be wielding a melee weapon."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "An original homebrew elite guard for a Curse of Strahd campaign, not a canonical named unit from the adventure. These disciplined veterans serve Baron Vargas Vallakovich as personal escorts, mansion guards, and enforcers. Their loyalty may come from conviction, fear, or the privileges of service.",
+          "A dark burgundy tabard and tarnished sunburst badge distinguish these soldiers from the ordinary town watch. Their equipment is practical, well maintained, and backed by the confidence of men accustomed to being obeyed.",
+          "Roleplaying: clipped, formal speech; absolute insistence on the Baron's titles; public declarations that all will be well, even while making arrests. An individual guard need not be cruel or evil.",
+          "Tactics: remain near the Baron, hold doors and narrow passages, and use Shield Bash to knock enemies down before following with sword attacks. They can choose to knock a creature unconscious when reducing it to 0 hit points with a melee attack under the normal rules. They prioritize protecting the Baron over chasing fleeing enemies.",
+          "Balance note: CR 3 is an untested homebrew estimate based on a veteran-style combatant. Shield Bash and Parry make these guards stronger than ordinary guards, especially in groups. They have no special immunity to fear, charm, or other magic."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_baron_household_guard_portrait_v1.webp"
+            }
+          }
+        ]
+      },
+      "damageTags": ["S", "B", "P"],
+      "miscTags": ["MW", "RW"],
+      "conditionInflict": ["prone"]
+    }
+  ]
+}
