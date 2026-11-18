@@ -1,0 +1,125 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "VallakiFestivalPrisonersV1",
+        "abbreviation": "Festival Prisoners",
+        "full": "Vallaki — Festival of the Blazing Sun Prisoners (Homebrew)",
+        "version": "1.0",
+        "authors": ["Campaign Import"]
+      }
+    ],
+    "edition": "classic"
+  },
+  "monster": [
+    {
+      "name": "Mara Velek — Festival Prisoner",
+      "source": "VallakiFestivalPrisonersV1",
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["N", "G"],
+      "ac": [10],
+      "hp": {"average": 4, "formula": "1d8"},
+      "speed": {"walk": 30},
+      "str": 10, "dex": 10, "con": 10, "int": 10, "wis": 10, "cha": 10,
+      "passive": 10,
+      "languages": ["Common"],
+      "cr": "0",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_mara_portrait_v1.webp",
+      "tokenHref": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_mara_token_v1.png"},
+      "action": [
+        {
+          "name": "Unarmed Strike",
+          "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Original homebrew adult NPC for the Festival of the Blazing Sun in Vallaki, not a named character from the published adventure. Mara is a forty-year-old baker with dark braids, flour-dusted clothes, and a stubborn sense of humor.",
+          "Alleged crime: malicious unhappiness and insulting the burgomaster. She sold a batch of lopsided sun-shaped buns and joked that even the bread could not manage a proper smile. An informer reported her.",
+          "Public punishment: displayed beside the festival platform, wrists bound with rope, a yellow ribbon pinned to her apron. A guard orders her to keep smiling whenever the Baron looks her way.",
+          "Demeanor: her mouth obeys; her eyes do not. She watches for familiar customers and desperately hopes her apprentice has remembered to feed the oven.",
+          "Quiet plea: 'Don't make a scene for me. Just tell my apprentice I haven't forgotten him.'",
+          "Adventure hook: she can identify a household supplier who enters the burgomaster's mansion regularly, but will not endanger that person without a credible plan.",
+          "GM note: ordinary commoner-level statistics, with no equipment or club. Rope bindings are scene details, not permanent biological traits. Apply movement restrictions or conditions manually to match the actual bindings; remove them when freed. The listed attack assumes her hands are free. No exhaustion or injury is assumed."
+        ],
+        "images": [{"type": "image", "href": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_mara_portrait_v1.webp"}}]
+      },
+      "damageTags": ["B"],
+      "miscTags": ["MW"]
+    },
+    {
+      "name": "Anton Krezek — Festival Prisoner",
+      "source": "VallakiFestivalPrisonersV1",
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["N", "G"],
+      "ac": [10],
+      "hp": {"average": 4, "formula": "1d8"},
+      "speed": {"walk": 30},
+      "str": 10, "dex": 10, "con": 10, "int": 10, "wis": 10, "cha": 10,
+      "passive": 10,
+      "languages": ["Common"],
+      "cr": "0",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_anton_portrait_v1.webp",
+      "tokenHref": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_anton_token_v1.png"},
+      "action": [
+        {
+          "name": "Unarmed Strike",
+          "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Original homebrew adult NPC for the Festival of the Blazing Sun in Vallaki, not a named character from the published adventure. Anton is a thirty-year-old lakeside dockworker and occasional porter with a stocky build, short brown beard, and faded green shirt.",
+          "Alleged crime: obstructing the burgomaster's officers. Ordered to help seize a neighbor for grumbling about festival work, Anton refused and stood in the doorway instead.",
+          "Public punishment: displayed beside the other prisoners with his wrists bound, ordered to hold an exaggerated smile while guards repeat his alleged offense to the crowd.",
+          "Demeanor: visibly angry, but carefully restraining himself because retaliation might fall on his neighbors. He studies the guards rather than the festival.",
+          "Quiet plea: 'If you're helping, help all of us. I'm not leaving them here.'",
+          "Adventure hook: he knows a quiet lakeside path and could guide the group away from the main roads after a rescue. He is a civilian, not a hidden elite fighter.",
+          "GM note: ordinary commoner-level statistics, with no equipment or club. Rope bindings are scene details, not permanent biological traits. Apply movement restrictions or conditions manually to match the actual bindings; remove them when freed. The listed attack assumes his hands are free. No exhaustion or injury is assumed."
+        ],
+        "images": [{"type": "image", "href": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_anton_portrait_v1.webp"}}]
+      },
+      "damageTags": ["B"],
+      "miscTags": ["MW"]
+    },
+    {
+      "name": "Elen Radu — Festival Prisoner",
+      "source": "VallakiFestivalPrisonersV1",
+      "size": ["M"],
+      "type": {"type": "humanoid", "tags": ["human"]},
+      "alignment": ["N", "G"],
+      "ac": [10],
+      "hp": {"average": 4, "formula": "1d8"},
+      "speed": {"walk": 30},
+      "str": 10, "dex": 10, "con": 10, "int": 10, "wis": 10, "cha": 10,
+      "passive": 10,
+      "languages": ["Common"],
+      "cr": "0",
+      "foundryImg": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_elen_portrait_v1.webp",
+      "tokenHref": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_elen_token_v1.png"},
+      "action": [
+        {
+          "name": "Unarmed Strike",
+          "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Original homebrew adult NPC for the Festival of the Blazing Sun in Vallaki, not a named character from the published adventure. Elen is a sixty-year-old seamstress with pinned silver hair, a patched plum-colored dress, and a habit of quietly looking after people.",
+          "Alleged crime: sheltering a dissident and refusing to name sympathizers. She hid a neighbor who had publicly called the Baron's festivals pointless.",
+          "Public punishment: displayed near the festival platform with bound wrists and a faded yellow ribbon. She is ordered to smile and thank the Baron for his generosity.",
+          "Demeanor: a small, painfully deliberate smile. She quietly reassures the other prisoners and refuses to give the crowd the spectacle of her despair.",
+          "Quiet plea: 'Say nothing about the person I sheltered. Promise me that first.'",
+          "Adventure hook: a hidden seam in her confiscated shawl contains a short note arranging safe lodging for the fugitive. Recovering it can open a rescue story without implying an established canonical resistance network.",
+          "GM note: ordinary commoner-level statistics, with no equipment or club. Rope bindings are scene details, not permanent biological traits. Apply movement restrictions or conditions manually to match the actual bindings; remove them when freed. The listed attack assumes her hands are free. No exhaustion or injury is assumed."
+        ],
+        "images": [{"type": "image", "href": {"type": "external", "url": "https://raw.githubusercontent.com/admin-nogoodwebsites/foundry-assets/main/st-andrals/vallaki_prisoner_elen_portrait_v1.webp"}}]
+      },
+      "damageTags": ["B"],
+      "miscTags": ["MW"]
+    }
+  ]
+}
